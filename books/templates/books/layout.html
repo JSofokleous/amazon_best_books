@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library</title>
+
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+    <style>
+        .book-holder {
+            font-family: 'amazon-ember','Segoe UI', sans-serif; 
+            font-size: 16px; 
+            background-color: rgba(1, 1, 1, 0.05); 
+            width: 200px; 
+            height: 450px;
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: inline-block;
+            vertical-align: top;
+            overflow: hidden;
+
+        }
+        .book-title {
+            padding-top: 5px;
+            line-height: 20px;
+        }
+    </style>
+                
+    {% load static %}
+</head>
+<body>
+    <div style="padding-top: 50px; font-size: 35px;">
+        <b>TITLE</b> 
+    <div>
+
+    <div style="padding-top: 50px">
+        <div>
+            {% block body %}
+    
+            {% endblock %}
+        </div>
+
+    </div>
+</body>
+</html>

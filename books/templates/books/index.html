@@ -1,0 +1,19 @@
+{% extends "books/layout.html" %}
+
+{% block body %}
+
+
+{% for book in good_books %}
+    <div class="book-holder">
+            <a href="{{book.link}}" style="color: black">
+                <img src="{{ book.image }}" alt="{{ book.title }}" style="width: 200px;">
+            </a>
+            <div class="book-title" style="height: 80px; overflow: hidden;">
+                {{book.title}}
+            </div>
+            <p>{{book.rating}} stars from {{book.ratings_total}} reviews</p>
+    </div>
+{% endfor %}
+
+
+{% endblock %}
